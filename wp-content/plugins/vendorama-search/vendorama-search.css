@@ -1,0 +1,338 @@
+/* ===================== VENDORAMA SUCHE v2 ===================== */
+#vendorama-suchformular {
+    background: linear-gradient(135deg, #f0f9f4 0%, #e8f5ee 100%);
+    border: 1px solid #c3e6d0;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 28px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 16px rgba(26,107,60,0.08);
+}
+
+.vs-form-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.vs-field { flex: 1; min-width: 180px; }
+.vs-field-grow { flex: 2; min-width: 280px; }
+.vs-field-small { flex: 0 0 130px; min-width: 130px; }
+.vs-field-check { flex: 1; min-width: 200px; padding-bottom: 6px; }
+
+.vs-field label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    color: #2d5a3d;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vs-field-check label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.vs-input-group {
+    display: flex;
+    gap: 0;
+}
+
+.vs-input-group input {
+    border-radius: 8px 0 0 8px !important;
+    flex: 1;
+}
+
+.vs-input-group button {
+    padding: 10px 14px;
+    background: #1A6B3C;
+    color: #fff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.vs-input-group button:hover { background: #145231; }
+
+.vs-field input[type="text"],
+.vs-field select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #b8ddc8;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vs-field input[type="text"]:focus,
+.vs-field select:focus {
+    border-color: #1A6B3C;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26,107,60,0.12);
+}
+
+.vs-field input[type="checkbox"] {
+    width: 18px; height: 18px;
+    cursor: pointer;
+    accent-color: #1A6B3C;
+}
+
+.vs-btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.vs-btn:active { transform: scale(0.97); }
+
+#vs-suchen {
+    background: #1A6B3C;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(26,107,60,0.3);
+}
+
+#vs-suchen:hover { background: #145231; box-shadow: 0 6px 16px rgba(26,107,60,0.4); }
+
+.vs-btn-secondary { background: #e0e0e0; color: #555; }
+.vs-btn-secondary:hover { background: #ccc; }
+
+/* ---- Ergebnis Info ---- */
+#vs-ergebnis-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+    min-height: 20px;
+    font-weight: bold;
+}
+
+/* ---- Karten Grid ---- */
+#vs-liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* ---- Automat Karte ---- */
+.vs-karte {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.vs-karte:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.vs-karte-foto {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #f0f0f0;
+}
+
+.vs-karte-foto-placeholder {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(135deg, #e8f5ee, #c3e6d0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.vs-karte-body { padding: 16px; }
+
+.vs-karte-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.vs-karte-titel {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1a1a;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.vs-karte-badge {
+    display: inline-block;
+    background: #e8f5ee;
+    color: #1A6B3C;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.vs-sterne {
+    color: #f5a623;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 6px 0;
+}
+
+.vs-sterne-leer { color: #ddd; }
+
+.vs-sterne-anzahl {
+    font-size: 12px;
+    color: #999;
+    margin-left: 4px;
+}
+
+.vs-karte-info {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+.vs-karte-distanz {
+    font-size: 12px;
+    color: #1A6B3C;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.vs-verifiziert {
+    font-size: 11px;
+    color: #1A6B3C;
+    margin-left: 4px;
+}
+
+.vs-karte-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.vs-karte-actions a,
+.vs-bewerten-btn {
+    flex: 1;
+    text-align: center;
+    padding: 9px 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.vs-nav-btn {
+    background: #1A6B3C;
+    color: #fff !important;
+}
+
+.vs-nav-btn:hover { background: #145231; }
+
+.vs-bewerten-btn {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.vs-bewerten-btn:hover { background: #ffe69c; }
+
+.vs-leer {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+    font-size: 16px;
+}
+
+.vs-loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px;
+    color: #1A6B3C;
+    font-size: 16px;
+}
+
+/* ---- Bewertungs-Modal ---- */
+#vs-modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9998;
+}
+
+#vs-modal {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    z-index: 9999;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+#vs-modal h3 {
+    margin: 0 0 20px;
+    color: #1A6B3C;
+    font-size: 20px;
+}
+
+#vs-sterne-input {
+    font-size: 40px;
+    color: #ddd;
+    margin-bottom: 16px;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.vs-stern-input { transition: color 0.1s; }
+.vs-stern-input.aktiv { color: #f5a623; }
+.vs-stern-input:hover { color: #f5a623; }
+
+#vs-kommentar {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.vs-modal-buttons {
+    display: flex;
+    gap: 10px;
+}

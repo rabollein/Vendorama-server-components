@@ -1,0 +1,1777 @@
+# Copyright (C) 2022 Gambit Technologies, Inc
+# This file is distributed under the same license as the Stackable - Gutenberg Blocks plugin.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Greenshift\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/stackable-ultimate-gutenberg-blocks\n"
+"POT-Creation-Date: 2026-01-21 10:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: esc_html_e;__;_e;esc_attr_e;esc_html__;esc_attr__;_n_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: src\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: libs_beauty\n"
+"X-Poedit-SearchPathExcluded-3: libs\n"
+
+#: blockrender/element/block.php:860
+msgid "Security check failed"
+msgstr ""
+
+#: blockrender/element/block.php:950
+msgid "Name is required"
+msgstr ""
+
+#: blockrender/element/block.php:954
+msgid "Valid email is required"
+msgstr ""
+
+#: blockrender/element/block.php:958
+msgid "Message is required"
+msgstr ""
+
+#: blockrender/element/block.php:977
+#, php-format
+msgid "New Contact Form Submission from %s"
+msgstr ""
+
+#: blockrender/social-share/block.php:148
+msgid "Check out:"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate a line chart data with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate a bar chart data with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate a horizontal bar chart data with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate a pie chart data with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate a area chart data with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate a radar chart data with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate a table with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Build a content blocks with the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Build a design for the following data: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate an image with the following prompt: "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Snapshot"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Global Snapshots are updated"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "New snapshot"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error: No Gemini API key found. Please add in settings"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Starting generation..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Streaming response..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Safety check completed."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Generation completed."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error: No Claude API key found. Please add in settings"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Block generation in Progress..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Block generation completed."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error: No OPEN AI API key found. Please add in settings"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Data search in Progress..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Data searching..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Data search completed."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Web search in Progress..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Web searching..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Web search completed."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Failed to process request."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Blocks inserted successfully"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error applying blocks. Please try again."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "AI Helper Tools"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Select AI Helper action"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Sections"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Build Blocks"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Build Design Sections"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Chart"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Line Chart"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Bar Chart"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Pie Chart"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Area Chart"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Radar Chart"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Content"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Table"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Content"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate Image"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Editing"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Fix Grammatic errors in Selected Blocks"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Select blocks where to fix grammatic errors"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Enter your prompt"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Enter your prompt to build blocks."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Use site brand colors"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Try Improved UI prompt"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Global Search tool enabled"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Low Quality"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Medium Quality"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "High Quality"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Transparent Background"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generate image with transparent background"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Image editing mode enabled - your prompt will modify the uploaded image"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error processing existing image for AI generation"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Image generation..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Uploading to media library..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Image was uploaded to media library."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error uploading image to media library"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error: No API key found. Please add in plugin settings"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error: No API key found. Please add in settings"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Design generation in Progress..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool usage: Design generation completed."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Please select blocks to fix grammatical errors"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "No content blocks found in selection"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Found "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Fixing grammatical errors in block "
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error fixing content. Please try again."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "All blocks processed successfully"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Generating. Please wait..."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "File:"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Edit"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "WebP image can have issues in model inputs, please convert to PNG"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1 templates/admin/settings_general_font_item.php:54
+msgid "Remove"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Tool queries:"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Design Preview"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Try to regenerate blocks"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Error converting blocks. Please try AI convertor."
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Convert to blocks (classic)"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Convert to blocks (creative AI)"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Add as core table block"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Add Blocks to Editor"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Image set as featured image"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Could not find current post"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Set As Featured Image"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Add Image to Editor"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Preset Variables"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Colors"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Font Sizes"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Line Heights"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Spacing"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Shadows"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Border Radius"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Transitions"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Animation"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Width & Height"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1 templates/admin/addon-page.php:525
+#: templates/admin/addon-page.php:544 templates/admin/addon-page.php:569
+msgid "Extra"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Layout"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Gradient Value"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Preset Variables saved"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Save Preset Variables"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Global Colors"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Change Global Colors"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Global Elements"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Change Global Elements"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Global Variables"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Change Global Variables"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Custom CSS"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Change Global Styles"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1 templates/admin/import-page.php:528
+msgid "Global Classes"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Change Global Classes"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Custom Global Snapshots"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Current values"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Save current as:"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1 settings.php:1372
+#: templates/admin/settings_general_form.php:39
+msgid "Save"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Snapshot is imported"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Import Snapshot"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Remove Snapshot"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Dark Mode Switcher"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Dark mode setting updated"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Switch to Light Mode"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Interactive Options"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Enable Creative Mouse Follow"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Mouse Color"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Enable Smooth Scroll"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Enable Page Transition"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Page Transition Effect"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Select Effect"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Fade"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Smooth Slide Top"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Smooth Slide Bottom"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Smooth Slide Left"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Smooth Slide Right"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Zoom"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Parallax Out"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Push"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "No effect"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Do not apply transition to"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Enter selectors separated by commas. These selectors will not be applied transition. Default are: header, footer"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Global Settings are updated. You may need to reload page"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "Save changes"
+msgstr ""
+
+#: build/gspbSiteEditor.js:1
+msgid "GreenShift Helpers"
+msgstr ""
+
+#: edd/EddLicensePage.php:172 edd/EddLicensePage.php:173
+#: edd/EddLicensePage.php:188
+msgid "Manage Licenses"
+msgstr ""
+
+#: edd/EddLicensePage.php:215
+msgid "Plugins License Options"
+msgstr ""
+
+#: edd/EddLicensePage.php:239
+msgid "This is where you enter your license key. If you have All in one license, you can activate it without activation separate addons"
+msgstr ""
+
+#: edd/EddLicensePage.php:256
+msgid "Enter your license key."
+msgstr ""
+
+#: edd/EddLicensePage.php:271
+msgid "Deactivate License"
+msgstr ""
+
+#: edd/EddLicensePage.php:276
+msgid "Activate License"
+msgstr ""
+
+#: edd/EddLicensePage.php:284
+msgid "License:"
+msgstr ""
+
+#: edd/EddLicensePage.php:294
+msgid "This license is expired"
+msgstr ""
+
+#: edd/EddLicensePage.php:299
+msgid "Expires:"
+msgstr ""
+
+#: edd/EddLicensePage.php:401 edd/EddLicensePage.php:443
+#: edd/EddLicensePage.php:568
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: edd/EddLicensePage.php:414
+#, php-format
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: edd/EddLicensePage.php:421
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: edd/EddLicensePage.php:425
+msgid "Invalid license."
+msgstr ""
+
+#: edd/EddLicensePage.php:430
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: edd/EddLicensePage.php:435
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: edd/EddLicensePage.php:439
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: edd/EddLicensePage.php:447
+msgid "An error occurred, we can not connect with License server, please contact with support"
+msgstr ""
+
+#: edd/EddLicensePage.php:742
+msgid "Activated succesfull."
+msgstr ""
+
+#: includes/helper.php:495
+msgid "Perspective Presets"
+msgstr ""
+
+#: includes/helper.php:612
+msgid "Hover Presets"
+msgstr ""
+
+#: includes/helper.php:698
+msgid "Interaction Presets"
+msgstr ""
+
+#: includes/helper.php:727
+msgid "Spacing Presets"
+msgstr ""
+
+#: includes/helper.php:792
+msgid "Shadow Presets"
+msgstr ""
+
+#: includes/helper.php:857
+msgid "Border Presets"
+msgstr ""
+
+#: includes/helper.php:878
+msgid "Background Presets"
+msgstr ""
+
+#: includes/helper.php:899
+msgid "Opacity Presets"
+msgstr ""
+
+#: includes/helper.php:952
+msgid "Data attributes"
+msgstr ""
+
+#: includes/importer.php:232
+msgid "Updated"
+msgstr ""
+
+#: includes/importer.php:233
+msgid "Imported"
+msgstr ""
+
+#: includes/importer.php:241 includes/importer.php:245
+#: includes/importer.php:258
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: includes/importer.php:247
+#, php-format
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: includes/importer.php:347
+msgid "template"
+msgstr ""
+
+#: includes/importer.php:349
+msgid "template part"
+msgstr ""
+
+#: includes/importer.php:351
+msgid "custom styles"
+msgstr ""
+
+#: includes/importer.php:353
+msgid "reusable templates"
+msgstr ""
+
+#: includes/importer.php:355
+msgid "posts"
+msgstr ""
+
+#: includes/importer.php:357
+msgid "pages"
+msgstr ""
+
+#: includes/importer.php:359
+msgid "products"
+msgstr ""
+
+#: includes/importer.php:570
+msgid "Updated Featured Images"
+msgstr ""
+
+#: includes/importer.php:582
+msgid "Updated Category Images"
+msgstr ""
+
+#: includes/importer.php:593
+msgid "Updated header menu"
+msgstr ""
+
+#: includes/importer.php:752
+msgid "Could not create temporary file."
+msgstr ""
+
+#: includes/importer.php:774
+#, php-format
+msgid "Request failed due to an error: %1$s (%2$s)"
+msgstr ""
+
+#: includes/importer.php:790
+#, php-format
+msgid "Remote server returned the following unexpected result: %1$s (%2$s)"
+msgstr ""
+
+#: includes/importer.php:802
+msgid "Remote server did not respond"
+msgstr ""
+
+#: includes/importer.php:809
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: includes/importer.php:814
+msgid "Downloaded file has incorrect size"
+msgstr ""
+
+#: includes/importer.php:821
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: includes/importer.php:836
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr ""
+
+#: includes/importer.php:851
+msgid "The uploaded file could not be moved"
+msgstr ""
+
+#: includes/importer.php:875
+msgid "Invalid file type"
+msgstr ""
+
+#: init.php:828 settings.php:421
+msgid "GreenShift Stylebook"
+msgstr ""
+
+#: init.php:848
+msgid "Reusable Component"
+msgstr ""
+
+#: init.php:2537
+msgid "Insufficient permissions. Only administrators are allowed."
+msgstr ""
+
+#: init.php:2541
+msgid "Invalid application password."
+msgstr ""
+
+#: init.php:2836 settings.php:1492
+msgid "JSON is not saved due the permission!!!"
+msgstr ""
+
+#: settings.php:135 settings.php:181
+msgid "GreenLight Layout Elements"
+msgstr ""
+
+#: settings.php:139 settings.php:185
+msgid "GreenLight Content Elements"
+msgstr ""
+
+#: settings.php:143 settings.php:189
+msgid "GreenLight Extra Elements"
+msgstr ""
+
+#: settings.php:147 settings.php:193
+msgid "GreenLight Tags Elements"
+msgstr ""
+
+#: settings.php:151 settings.php:169
+msgid "GreenShift Layout Blocks"
+msgstr ""
+
+#: settings.php:155 settings.php:173
+msgid "GreenShift Content Blocks"
+msgstr ""
+
+#: settings.php:159 settings.php:177
+msgid "GreenShift Extra Blocks"
+msgstr ""
+
+#: settings.php:218 settings.php:219 templates/admin/import-page.php:28
+msgid "Reusable Templates"
+msgstr ""
+
+#: settings.php:241 settings.php:242 settings.php:524
+msgid "Settings"
+msgstr ""
+
+#: settings.php:250 settings.php:251 templates/admin/navleft.php:80
+msgid "Addons"
+msgstr ""
+
+#: settings.php:259 settings.php:260
+msgid "Upgrade"
+msgstr ""
+
+#: settings.php:268 settings.php:269 templates/admin/contact-page.php:17
+msgid "Contact Us"
+msgstr ""
+
+#: settings.php:276 settings.php:277 templates/admin/import-page.php:22
+#: templates/admin/navleft.php:87
+msgid "Import/Export"
+msgstr ""
+
+#: settings.php:284 settings.php:285
+msgid "Demo Import"
+msgstr ""
+
+#: settings.php:292 settings.php:293 templates/admin/block-manager-page.php:387
+#: templates/admin/navleft.php:77
+msgid "Block Manager"
+msgstr ""
+
+#: settings.php:307 settings.php:308 settings.php:316 settings.php:317
+#: templates/admin/navleft.php:70
+msgid "Stylebook"
+msgstr ""
+
+#: settings.php:426
+msgid "Create Stylebook"
+msgstr ""
+
+#: settings.php:528
+msgid "Fonts"
+msgstr ""
+
+#: settings.php:529 templates/admin/import-page.php:514
+msgid "Breakpoints"
+msgstr ""
+
+#: settings.php:530
+msgid "CSS Options"
+msgstr ""
+
+#: settings.php:531
+msgid "Script Options"
+msgstr ""
+
+#: settings.php:532
+msgid "Header/Footer code"
+msgstr ""
+
+#: settings.php:533
+msgid "Interface"
+msgstr ""
+
+#: settings.php:534
+msgid "API Keys & AI"
+msgstr ""
+
+#: settings.php:546 settings.php:631 settings.php:860 settings.php:939
+#: settings.php:1175
+msgid "Sorry, your nonce did not verify."
+msgstr ""
+
+#: settings.php:592
+msgid "Use Inline in block only if you have some issues with not updating styles of blocks or cache. Once saved as inline in block, styles can be overwritten only when you update post with blocks"
+msgstr ""
+
+#: settings.php:598
+msgid "Css location"
+msgstr ""
+
+#: settings.php:601
+msgid "Inline in Head"
+msgstr ""
+
+#: settings.php:602
+msgid "Inline in block"
+msgstr ""
+
+#: settings.php:607
+msgid "Enable detection of dark mode before site loading"
+msgstr ""
+
+#: settings.php:613
+msgid "On-Fly Inline Merged CSS (Beta, works only in block themes)"
+msgstr ""
+
+#: settings.php:620 settings.php:766 settings.php:927 settings.php:1156
+msgid "Save settings"
+msgstr ""
+
+#: settings.php:701
+msgid "Install Smart Code AI free plugin to enable code editor in block HTML/CSS panels"
+msgstr ""
+
+#: settings.php:702 templates/admin/addon-page.php:377
+#: templates/admin/addon-page.php:409 templates/admin/addon-page.php:441
+#: templates/admin/addon-page.php:475 templates/admin/addon-page.php:509
+#: templates/admin/settings_general_font_item.php:52
+msgid "Download"
+msgstr ""
+
+#: settings.php:708
+msgid "Support for Core Framework Utility classes"
+msgstr ""
+
+#: settings.php:714
+msgid "Disable core Headings anchor generation"
+msgstr ""
+
+#: settings.php:720
+msgid "Disable default Column padding in Row block"
+msgstr ""
+
+#: settings.php:726
+msgid "Dark Accent UI for block panels"
+msgstr ""
+
+#: settings.php:732
+msgid "Dark Mode for Editor page"
+msgstr ""
+
+#: settings.php:738
+msgid "Priority for GreenLight Element Blocks in Inserter"
+msgstr ""
+
+#: settings.php:741
+msgid "Show both, priority on regular Greenshift blocks"
+msgstr ""
+
+#: settings.php:742
+msgid "Show both, priority on GreenLight Element blocks"
+msgstr ""
+
+#: settings.php:743
+msgid "Show only GreenLight Element blocks"
+msgstr ""
+
+#: settings.php:744
+msgid "Show only Greenshift blocks"
+msgstr ""
+
+#: settings.php:749
+msgid "Default unit for values"
+msgstr ""
+
+#: settings.php:759
+msgid "Close Local style option in Element block by default"
+msgstr ""
+
+#: settings.php:809
+msgid "Mobile"
+msgstr ""
+
+#: settings.php:817
+msgid "Tablet"
+msgstr ""
+
+#: settings.php:825
+msgid "Desktop"
+msgstr ""
+
+#: settings.php:833
+msgid "Default Row Content Width"
+msgstr ""
+
+#: settings.php:841
+msgid "Enable Landscape point"
+msgstr ""
+
+#: settings.php:884
+msgid "Javascript Files Delay"
+msgstr ""
+
+#: settings.php:892
+msgid "Attention! This is experimental feature"
+msgstr ""
+
+#: settings.php:902
+msgid "Enable script delay for Greenshift's scripts"
+msgstr ""
+
+#: settings.php:906
+msgid "Javascript delay options"
+msgstr ""
+
+#: settings.php:909
+msgid "Enable on whole site"
+msgstr ""
+
+#: settings.php:910
+msgid "Enable only on selected pages"
+msgstr ""
+
+#: settings.php:911
+msgid "Enable on whole site except selected pages"
+msgstr ""
+
+#: settings.php:917
+msgid "Page Urls (one per line)."
+msgstr ""
+
+#: settings.php:921
+msgid "Specify URLs of pages (one per line)."
+msgstr ""
+
+#: settings.php:1012 templates/admin/import-page.php:538
+msgid "Google API Key"
+msgstr ""
+
+#: settings.php:1016 settings.php:1043 settings.php:1052 settings.php:1061
+#: settings.php:1070
+msgid "Get an API Key"
+msgstr ""
+
+#: settings.php:1021
+msgid "Cloudflare Turnstile Site Key"
+msgstr ""
+
+#: settings.php:1025
+msgid "Get Turnstile Keys"
+msgstr ""
+
+#: settings.php:1030
+msgid "Cloudflare Turnstile Secret Key"
+msgstr ""
+
+#: settings.php:1034
+msgid "Secret key is used for server-side verification"
+msgstr ""
+
+#: settings.php:1039
+msgid "Open AI API Key"
+msgstr ""
+
+#: settings.php:1048
+msgid "Claude API Key"
+msgstr ""
+
+#: settings.php:1057
+msgid "Deepseek API Key"
+msgstr ""
+
+#: settings.php:1066
+msgid "Gemini API Key"
+msgstr ""
+
+#: settings.php:1075
+msgid "Select Model for Smart Code AI Block"
+msgstr ""
+
+#: settings.php:1102
+msgid "AI General Model"
+msgstr ""
+
+#: settings.php:1125
+msgid "AI Image Model"
+msgstr ""
+
+#: settings.php:1139
+msgid "AI Design Model"
+msgstr ""
+
+#: settings.php:1296
+msgid "Footer and Head Hooks"
+msgstr ""
+
+#: settings.php:1313
+msgid "Custom code in head section"
+msgstr ""
+
+#: settings.php:1319
+msgid "Custom code before closed Body"
+msgstr ""
+
+#: settings.php:1325
+msgid "Enable Meta Description"
+msgstr ""
+
+#: settings.php:1332
+msgid "Remove WordPress Elements"
+msgstr ""
+
+#: settings.php:1336
+msgid "Remove Emoji Scripts and Styles"
+msgstr ""
+
+#: settings.php:1342
+msgid "Remove Skip to Content Link and Script"
+msgstr ""
+
+#: settings.php:1348
+msgid "Remove Generator and Other Meta Tags"
+msgstr ""
+
+#: settings.php:1354
+msgid "Remove wp-block-library CSS"
+msgstr ""
+
+#: settings.php:1360
+msgid "Remove RSS/XML Links"
+msgstr ""
+
+#: settings.php:1366
+msgid "Remove API Links (api.w.org, rsd)"
+msgstr ""
+
+#: settings.php:1392
+msgid "Attention! Local font is global option and it can reduce performance in some cases. Do not use more than 2 global fonts. Please, check"
+msgstr ""
+
+#: settings.php:1392 templates/admin/addon-page.php:547
+#: templates/admin/addon-page.php:572
+msgid "Documentation"
+msgstr ""
+
+#: settings.php:1563
+msgid "Block title"
+msgstr ""
+
+#: settings.php:1564
+msgid "Usage"
+msgstr ""
+
+#: settings.php:1578
+msgid "If you use template inside other dynamic ajax blocks"
+msgstr ""
+
+#: settings.php:1579
+msgid "Shortcode for Ajax render:"
+msgstr ""
+
+#: settings.php:1580
+msgid "Hover trigger:"
+msgstr ""
+
+#: settings.php:1581
+msgid "Click trigger:"
+msgstr ""
+
+#: settings.php:1582
+msgid "On view trigger:"
+msgstr ""
+
+#: templates/admin/addon-page.php:21
+msgid "Your addons"
+msgstr ""
+
+#: templates/admin/addon-page.php:350
+msgid "Here you can find your active addons. Each addon extends functionality of your site by additional blocks and features. You can buy them separately or as part of plans. After purchase, download zip files in your account and upload in Plugins - Add new"
+msgstr ""
+
+#: templates/admin/addon-page.php:358 templates/admin/addon-page.php:392
+#: templates/admin/addon-page.php:424 templates/admin/addon-page.php:458
+#: templates/admin/addon-page.php:490
+msgid "License is Active"
+msgstr ""
+
+#: templates/admin/addon-page.php:360 templates/admin/addon-page.php:394
+#: templates/admin/addon-page.php:426 templates/admin/addon-page.php:460
+#: templates/admin/addon-page.php:492
+msgid "License is not Active"
+msgstr ""
+
+#: templates/admin/addon-page.php:363 templates/admin/addon-page.php:397
+#: templates/admin/addon-page.php:429 templates/admin/addon-page.php:463
+#: templates/admin/addon-page.php:495
+msgid "Installed"
+msgstr ""
+
+#: templates/admin/addon-page.php:365 templates/admin/addon-page.php:399
+#: templates/admin/addon-page.php:431 templates/admin/addon-page.php:465
+#: templates/admin/addon-page.php:497
+msgid "Not Installed"
+msgstr ""
+
+#: templates/admin/addon-page.php:369
+msgid "Advanced Animations"
+msgstr ""
+
+#: templates/admin/addon-page.php:373
+msgid "Add motion and animations like on top awwarded sites"
+msgstr ""
+
+#: templates/admin/addon-page.php:374 templates/admin/addon-page.php:406
+#: templates/admin/addon-page.php:438 templates/admin/addon-page.php:472
+#: templates/admin/addon-page.php:506
+msgid "Details and Demo"
+msgstr ""
+
+#: templates/admin/addon-page.php:381 templates/admin/addon-page.php:413
+#: templates/admin/addon-page.php:445 templates/admin/addon-page.php:479
+#: templates/admin/addon-page.php:513
+msgid "Buy Now"
+msgstr ""
+
+#: templates/admin/addon-page.php:401
+msgid "Query and Dynamic"
+msgstr ""
+
+#: templates/admin/addon-page.php:405
+msgid "Custom templates, dynamic content, listings, grid, taxonomy blocks"
+msgstr ""
+
+#: templates/admin/addon-page.php:433
+msgid "Seo and Marketing Addon"
+msgstr ""
+
+#: templates/admin/addon-page.php:437
+msgid "Special mobile and seo optimized blocks which can help to earn money"
+msgstr ""
+
+#: templates/admin/addon-page.php:467
+msgid "Chart Addon"
+msgstr ""
+
+#: templates/admin/addon-page.php:471
+msgid "Do you want to improve visual hierarchy and presentation in your content"
+msgstr ""
+
+#: templates/admin/addon-page.php:501
+msgid "Woocommerce addon"
+msgstr ""
+
+#: templates/admin/addon-page.php:505
+msgid "Use Woocommerce FSE blocks to build fast eshops"
+msgstr ""
+
+#: templates/admin/addon-page.php:530
+msgid "Additional tools and converters to enhance your workflow"
+msgstr ""
+
+#: templates/admin/addon-page.php:537 templates/admin/addon-page.php:562
+msgid "Available"
+msgstr ""
+
+#: templates/admin/addon-page.php:539 templates/admin/addon-page.php:564
+msgid "Upgrade Required"
+msgstr ""
+
+#: templates/admin/addon-page.php:542
+msgid "Figma Converter"
+msgstr ""
+
+#: templates/admin/addon-page.php:546
+msgid "Convert your Figma designs to Greenshift WordPress blocks in one click."
+msgstr ""
+
+#: templates/admin/addon-page.php:550 templates/admin/addon-page.php:575
+msgid "Download Tool"
+msgstr ""
+
+#: templates/admin/addon-page.php:552 templates/admin/addon-page.php:577
+msgid "Upgrade to Access"
+msgstr ""
+
+#: templates/admin/addon-page.php:567
+msgid "Web page to Blocks"
+msgstr ""
+
+#: templates/admin/addon-page.php:571
+msgid "Convert any webpage or HTML design to Greenshift blocks."
+msgstr ""
+
+#: templates/admin/block-manager-page.php:170
+msgid "Block manager settings saved successfully!"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:398
+msgid "Use this page to control which blocks and variations are available to different user roles in the block inserter. Simplified panel option allows you to hide the block manager panel for non editor user roles and lock position of blocks."
+msgstr ""
+
+#: templates/admin/block-manager-page.php:413
+msgid "Simplified Panels"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:421
+msgid "Enable simplified interface panels"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:422
+msgid "Enable simplified interface panels for this user role"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:430
+msgid "Disable Blocks"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:433
+#: templates/admin/block-manager-page.php:461
+msgid "Select All"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:436
+#: templates/admin/block-manager-page.php:464
+msgid "Deselect All"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:458
+msgid "Disable Element Variations"
+msgstr ""
+
+#: templates/admin/block-manager-page.php:487
+msgid "Save Settings"
+msgstr ""
+
+#: templates/admin/contact-page.php:24
+msgid "Thank you for using Greenshift. For any bug report or questions, please, contact us:"
+msgstr ""
+
+#: templates/admin/contact-page.php:27
+msgid "Private contact form"
+msgstr ""
+
+#: templates/admin/contact-page.php:31
+msgid "Ticket system on Wordpress.org"
+msgstr ""
+
+#: templates/admin/contact-page.php:34
+msgid "Support Board - for buyers of premium addons"
+msgstr ""
+
+#: templates/admin/import-demo.php:21
+msgid "Import Demo Site"
+msgstr ""
+
+#: templates/admin/import-demo.php:162 templates/admin/import-page.php:189
+msgid "Before using the importer, it is recommended to save and back up your current design using the Export function."
+msgstr ""
+
+#: templates/admin/import-demo.php:169 templates/admin/import-page.php:170
+msgid "Please ask your site administrator to enable import and export capabilities for your user account."
+msgstr ""
+
+#: templates/admin/import-demo.php:189
+#, php-format
+msgid "Please install and activate a %1$sGreenshift theme%2$s to use demo sites."
+msgstr ""
+
+#: templates/admin/import-demo.php:203
+msgid "WooCommerce Full Site Editing Theme offers an unparalleled level of customization control.  So if you're ready to take your ecommerce business to the next level, consider using the WooCommerce Full Site Editing Theme as your starting point."
+msgstr ""
+
+#: templates/admin/import-demo.php:207
+msgid "Woocommerce addon is active."
+msgstr ""
+
+#: templates/admin/import-demo.php:209
+msgid "Woocommerce addon is required"
+msgstr ""
+
+#: templates/admin/import-demo.php:212
+msgid "Query addon is active."
+msgstr ""
+
+#: templates/admin/import-demo.php:214
+msgid "Query addon is required"
+msgstr ""
+
+#: templates/admin/import-demo.php:223
+msgid "Import Demo"
+msgstr ""
+
+#: templates/admin/import-demo.php:229
+msgid "Import Only FSE templates"
+msgstr ""
+
+#: templates/admin/import-demo.php:246
+msgid "Import is in progress. Do not close this page until you get message about import results"
+msgstr ""
+
+#: templates/admin/import-demo.php:252
+msgid "Show details"
+msgstr ""
+
+#: templates/admin/import-page.php:27
+msgid "FSE Templates"
+msgstr ""
+
+#: templates/admin/import-page.php:29
+msgid "Greenshift Global"
+msgstr ""
+
+#: templates/admin/import-page.php:176
+#, php-format
+msgid "This site does not have Full Site Editing enabled. Please install and activate a %1$sblock theme%2$s. Recommended theme - %3$sGreenshift%2$s"
+msgstr ""
+
+#: templates/admin/import-page.php:228
+msgid "Import your FSE templates."
+msgstr ""
+
+#: templates/admin/import-page.php:243
+msgid "Export your Full Site Editing design."
+msgstr ""
+
+#: templates/admin/import-page.php:244 templates/admin/import-page.php:373
+msgid "Click the button below to generate XML file"
+msgstr ""
+
+#: templates/admin/import-page.php:245 templates/admin/import-page.php:374
+#: templates/admin/import-page.php:485
+msgid "Once you&#8217;ve saved the download file, you can use the Import option in another site to import the design from this site."
+msgstr ""
+
+#: templates/admin/import-page.php:267 templates/admin/import-page.php:396
+#: templates/admin/import-page.php:501
+msgid "Select all"
+msgstr ""
+
+#: templates/admin/import-page.php:314
+msgid " (active theme)"
+msgstr ""
+
+#: templates/admin/import-page.php:319
+msgid "Unknown theme"
+msgstr ""
+
+#: templates/admin/import-page.php:325
+msgid " (template)"
+msgstr ""
+
+#: templates/admin/import-page.php:327
+msgid " (template part)"
+msgstr ""
+
+#: templates/admin/import-page.php:344 templates/admin/import-page.php:350
+#: templates/admin/import-page.php:425 templates/admin/import-page.php:431
+#: templates/admin/import-page.php:562 templates/admin/import-page.php:568
+msgid "Download Export File"
+msgstr ""
+
+#: templates/admin/import-page.php:349 templates/admin/import-page.php:430
+#: templates/admin/import-page.php:567
+msgid "You currently do not have any customized Templates, Template Parts, or Custom Styles saved in the WordPress database."
+msgstr ""
+
+#: templates/admin/import-page.php:357
+msgid "Import your reusable templates."
+msgstr ""
+
+#: templates/admin/import-page.php:372
+msgid "Export your reusable templates."
+msgstr ""
+
+#: templates/admin/import-page.php:419 templates/admin/import-page.php:556
+msgid "No reusable blocks found."
+msgstr ""
+
+#: templates/admin/import-page.php:437
+msgid "Import your Greenshift global settings"
+msgstr ""
+
+#: templates/admin/import-page.php:441
+msgid "Please select a JSON file to import."
+msgstr ""
+
+#: templates/admin/import-page.php:449
+msgid "Invalid file upload."
+msgstr ""
+
+#: templates/admin/import-page.php:456
+msgid "Invalid JSON file."
+msgstr ""
+
+#: templates/admin/import-page.php:464
+msgid "Data imported successfully from"
+msgstr ""
+
+#: templates/admin/import-page.php:475
+msgid "Import Data"
+msgstr ""
+
+#: templates/admin/import-page.php:483
+msgid "Export your Greenshift global settings"
+msgstr ""
+
+#: templates/admin/import-page.php:484
+msgid "Click the button below to generate json file"
+msgstr ""
+
+#: templates/admin/import-page.php:512
+msgid "Script Management"
+msgstr ""
+
+#: templates/admin/import-page.php:516
+msgid "Localization"
+msgstr ""
+
+#: templates/admin/import-page.php:518
+msgid "Reusable Styles"
+msgstr ""
+
+#: templates/admin/import-page.php:520
+msgid "Presets"
+msgstr ""
+
+#: templates/admin/import-page.php:522
+msgid "Local fonts"
+msgstr ""
+
+#: templates/admin/import-page.php:524
+msgid "Local font styles"
+msgstr ""
+
+#: templates/admin/import-page.php:526
+msgid "Greenshift global colors"
+msgstr ""
+
+#: templates/admin/import-page.php:530
+msgid "System Elements design"
+msgstr ""
+
+#: templates/admin/import-page.php:532
+msgid "Greenshift typography"
+msgstr ""
+
+#: templates/admin/import-page.php:534
+msgid "Greenshift global styles"
+msgstr ""
+
+#: templates/admin/import-page.php:536
+msgid "Greenshift Site settings"
+msgstr ""
+
+#: templates/admin/import-page.php:540
+msgid "Custom Default attributes"
+msgstr ""
+
+#: templates/admin/navleft.php:47
+msgid "Free version"
+msgstr ""
+
+#: templates/admin/navleft.php:55
+msgid "Upgrade Plan"
+msgstr ""
+
+#: templates/admin/navleft.php:57
+msgid "Upgrade Now"
+msgstr ""
+
+#: templates/admin/navleft.php:66
+msgid "Get Started"
+msgstr ""
+
+#: templates/admin/navleft.php:74
+msgid "Global Settings"
+msgstr ""
+
+#: templates/admin/navleft.php:83
+msgid "License Manager"
+msgstr ""
+
+#: templates/admin/navleft.php:94
+msgid "Demo Site Import"
+msgstr ""
+
+#: templates/admin/navleft.php:114
+msgid "Support/Contact Us"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:13
+msgid "Font"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:21
+msgid "Font Family Name"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:27
+msgid "Make sure that name has only Latin symbols without numbers and special characters"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:35
+msgid "Font file"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:44
+#, php-format
+msgid "Upload .%s font file"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:49
+msgid "Current file"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:64
+msgid "Font Preloaded"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:70
+msgid "Use only for fonts which are attached to global elements"
+msgstr ""
+
+#: templates/admin/settings_general_font_item.php:78
+msgid "Remove Font"
+msgstr ""
+
+#: templates/admin/settings_general_form.php:37
+msgid "Add New Font"
+msgstr ""
+
+#: templates/admin/upgrade-page.php:297
+msgid "All in ONE Lifetime - Active"
+msgstr ""
+
+#: templates/admin/upgrade-page.php:300
+msgid "Congratulations, You have our Best available plan"
+msgstr ""
+
+#: templates/admin/welcome-page.php:944
+msgid "Welcome to "
+msgstr ""
+
+#: templates/admin/welcome-page.php:954
+msgid "Page Builder"
+msgstr ""
+
+#: templates/admin/welcome-page.php:959
+msgid "Turn your regular design into a high-quality site with attractive animations, interactions, dynamic and marketing blocks in an FSE environment"
+msgstr ""
+
+#: templates/admin/welcome-page.php:960
+msgid "Learning Center"
+msgstr ""
+
+#: templates/admin/welcome-page.php:972
+msgid "Choose your Content blocks"
+msgstr ""
+
+#: templates/admin/welcome-page.php:984
+msgid "Beginner Blocks"
+msgstr ""
+
+#: templates/admin/welcome-page.php:985
+msgid "GreenShift Blocks with visual helpers"
+msgstr ""
+
+#: templates/admin/welcome-page.php:992
+msgid "Professional Blocks"
+msgstr ""
+
+#: templates/admin/welcome-page.php:993
+msgid "GreenLight Element blocks"
+msgstr ""
+
+#: templates/admin/welcome-page.php:1000
+msgid "Both, Professional first"
+msgstr ""
+
+#: templates/admin/welcome-page.php:1001
+msgid "GreenLight Elements first"
+msgstr ""
+
+#: templates/admin/welcome-page.php:1008
+msgid "Both, Beginner first"
+msgstr ""
+
+#: templates/admin/welcome-page.php:1009
+msgid "GreenShift blocks first"
+msgstr ""

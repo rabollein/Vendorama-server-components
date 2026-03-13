@@ -1,0 +1,4 @@
+div.gspreloader{position: relative;}
+div.gspreloader > *{opacity: 0.2;} 
+div.gspreloader:after {z-index: 2; content: "◌"; position: absolute; top: 30px; left: 45%; font-size: 45px; opacity: 1; animation: gs-spin 1s linear infinite; }
+@keyframes gs-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}

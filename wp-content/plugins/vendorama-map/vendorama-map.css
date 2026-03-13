@@ -1,0 +1,179 @@
+/* ===================== VENDORAMA LEAFLET KARTE ===================== */
+#vendorama-leaflet-map {
+    z-index: 1;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+/* ---- Hover Popup ---- */
+.vm-hover-popup {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 0;
+    overflow: hidden;
+    min-width: 220px;
+    max-width: 260px;
+    font-family: Arial, sans-serif;
+    border: none !important;
+}
+
+.vm-hover-popup .leaflet-popup-content-wrapper {
+    padding: 0 !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+
+.vm-hover-popup .leaflet-popup-content {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.vm-hover-popup .leaflet-popup-tip-container {
+    display: none;
+}
+
+.vm-popup-foto {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.vm-popup-placeholder {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(135deg, #e8f5ee, #c3e6d0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.vm-popup-body {
+    padding: 12px 14px;
+}
+
+.vm-popup-titel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.vm-popup-badge {
+    display: inline-block;
+    background: #e8f5ee;
+    color: #1A6B3C;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.vm-popup-sterne {
+    color: #f5a623;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.vm-popup-info {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.vm-popup-distanz {
+    font-size: 11px;
+    color: #1A6B3C;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.vm-popup-nav {
+    display: block;
+    text-align: center;
+    background: #1A6B3C;
+    color: #fff !important;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: background 0.2s;
+}
+
+.vm-popup-nav:hover { background: #145231; }
+
+/* ---- Kategorie Marker ---- */
+.vm-marker {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% 50% 50% 0 !important;
+    transform: rotate(-45deg) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25) !important;
+    border: 2px solid rgba(255,255,255,0.8) !important;
+    cursor: pointer !important;
+    transition: transform 0.15s, box-shadow 0.15s !important;
+}
+
+.vm-marker:hover {
+    transform: rotate(-45deg) scale(1.2) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35) !important;
+}
+
+.vm-marker-inner {
+    transform: rotate(45deg);
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Farben je Kategorie */
+.vm-cat-zigaretten    { background: #c0392b; }
+.vm-cat-suessigkeiten { background: #e91e8c; }
+.vm-cat-getraenke     { background: #2980b9; }
+.vm-cat-frischprodukte{ background: #f39c12; }
+.vm-cat-backwaren     { background: #d35400; }
+.vm-cat-blumen        { background: #8e44ad; }
+.vm-cat-pakete        { background: #16a085; }
+.vm-cat-geldautomat   { background: #27ae60; }
+.vm-cat-tankautomat   { background: #2c3e50; }
+.vm-cat-fahrrad       { background: #1A6B3C; }
+.vm-cat-sonstiges     { background: #7f8c8d; }
+
+/* ---- Legende ---- */
+#vm-legende {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.vm-legende-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 20px;
+    transition: background 0.15s;
+    border: 1px solid #eee;
+}
+
+.vm-legende-item:hover { background: #f0f9f4; }
+.vm-legende-item.aktiv { background: #e8f5ee; border-color: #1A6B3C; }
+
+.vm-legende-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
