@@ -6,3 +6,26 @@ wp-content/backup*/
 *.log
 node_modules/
 .env
+# APK Dateien
+app/*.apk
+app/admin/*.apk
+
+# WordPress Core (nicht dein Code)
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+index.php
+license.txt
+readme.html
+
+# Themes (nur deine eigenen behalten falls vorhanden)
+wp-content/themes/blocksy/
+wp-content/themes/twentytwenty*/
+
+# Drittanbieter Plugins
+wp-content/plugins/advanced-custom-fields/
+wp-content/plugins/cpt-ui/
+wp-content/plugins/wordpress-seo/
+wp-content/plugins/wordfence/
+wp-content/plugins/blocksy-companion/
