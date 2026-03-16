@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "build":14,
+  "pflicht_update": false,
+  "download_url": "https://www.vendorama.eu/app/vendorama-beta.apk",
+  "changelog": "- Erste Beta-Version\n- Interaktive Karte\n- Automaten melden\n- GPS-Suche"
+}

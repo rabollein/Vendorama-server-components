@@ -3,30 +3,24 @@
  * Plugin Name: Vendorama Suche
  * Plugin URI:  https://www.vendorama.eu
  * Description: Suchformular und Filterung fuer Automatenstandorte.
- * Version:     2.0.0
+ * Version:     2.2.0
  * Author:      Vendorama
  * License:     GPL2
  */
 
 defined('ABSPATH') or die('Kein direkter Zugriff!');
 
-// -------------------------------------------------------
-// Styles und Scripts laden
-// -------------------------------------------------------
 add_action('wp_enqueue_scripts', 'vendorama_search_assets');
 
 function vendorama_search_assets() {
-    wp_enqueue_style('vendorama-search', plugin_dir_url(__FILE__) . 'vendorama-search.css', [], '2.0.0');
-    wp_enqueue_script('vendorama-search', plugin_dir_url(__FILE__) . 'vendorama-search.js', ['jquery'], '2.0.0', true);
+    wp_enqueue_style('vendorama-search', plugin_dir_url(__FILE__) . 'vendorama-search.css', [], '2.2.0');
+    wp_enqueue_script('vendorama-search', plugin_dir_url(__FILE__) . 'vendorama-search.js', ['jquery'], '2.2.0', true);
     wp_localize_script('vendorama-search', 'vendoramaSearch', [
         'ajaxurl' => admin_url('admin-ajax.php'),
         'nonce'   => wp_create_nonce('vendorama_search_nonce'),
     ]);
 }
 
-// -------------------------------------------------------
-// Shortcode [vendorama_suche]
-// -------------------------------------------------------
 add_shortcode('vendorama_suche', 'vendorama_search_shortcode');
 
 function vendorama_search_shortcode() {
@@ -53,24 +47,56 @@ function vendorama_search_shortcode() {
                 </select>
             </div>
         </div>
+
+        <!-- Kategorie Mehrfachauswahl -->
         <div class="vs-form-row">
-            <div class="vs-field">
-                <label for="vs-kategorie">🏷️ Kategorie</label>
-                <select id="vs-kategorie">
-                    <option value="">Alle Kategorien</option>
-                    <option value="zigaretten">Zigaretten</option>
-                    <option value="suessigkeiten">Süßigkeiten & Snacks</option>
-                    <option value="getraenke">Getränke</option>
-                    <option value="frischprodukte">Frischprodukte</option>
-                    <option value="backwaren">Backwaren</option>
-                    <option value="blumen">Blumen</option>
-                    <option value="pakete">Pakete & Post</option>
-                    <option value="geldautomat">Geldautomat</option>
-                    <option value="tankautomat">Tankautomat</option>
-                    <option value="fahrrad">Fahrrad & Mobilität</option>
-                    <option value="sonstiges">Sonstiges</option>
-                </select>
+            <div class="vs-field vs-field-full">
+                <label>🏷️ Kategorie <span style="font-weight:normal;color:#666;text-transform:none;letter-spacing:0;">(Mehrfachauswahl möglich)</span></label>
+                <div class="vs-kategorie-chips" id="vs-kategorie-chips">
+                    <label class="vs-chip aktiv" data-value="">
+                        <input type="checkbox" name="vs-kategorie" value="" checked> 🗺️ Alle
+                    </label>
+                    <label class="vs-chip" data-value="zigaretten">
+                        <input type="checkbox" name="vs-kategorie" value="zigaretten"> 🚬 Zigaretten
+                    </label>
+                    <label class="vs-chip" data-value="vapes">
+                        <input type="checkbox" name="vs-kategorie" value="vapes"> 💨 Vapes
+                    </label>
+                    <label class="vs-chip" data-value="snacks">
+                        <input type="checkbox" name="vs-kategorie" value="snacks"> 🍬 Snacks
+                    </label>
+                    <label class="vs-chip" data-value="getraenke">
+                        <input type="checkbox" name="vs-kategorie" value="getraenke"> 🥤 Getränke
+                    </label>
+                    <label class="vs-chip" data-value="frischprodukte">
+                        <input type="checkbox" name="vs-kategorie" value="frischprodukte"> 🥚 Frischprodukte
+                    </label>
+                    <label class="vs-chip" data-value="backwaren">
+                        <input type="checkbox" name="vs-kategorie" value="backwaren"> 🥐 Backwaren
+                    </label>
+                    <label class="vs-chip" data-value="blumen">
+                        <input type="checkbox" name="vs-kategorie" value="blumen"> 🌸 Blumen
+                    </label>
+                    <label class="vs-chip" data-value="pakete">
+                        <input type="checkbox" name="vs-kategorie" value="pakete"> 📦 Pakete
+                    </label>
+                    <label class="vs-chip" data-value="geldautomat">
+                        <input type="checkbox" name="vs-kategorie" value="geldautomat"> 💶 Geldautomat
+                    </label>
+                    <label class="vs-chip" data-value="tankautomat">
+                        <input type="checkbox" name="vs-kategorie" value="tankautomat"> ⛽ Tankautomat
+                    </label>
+                    <label class="vs-chip" data-value="fahrrad">
+                        <input type="checkbox" name="vs-kategorie" value="fahrrad"> 🚲 Fahrrad
+                    </label>
+                    <label class="vs-chip" data-value="sonstiges">
+                        <input type="checkbox" name="vs-kategorie" value="sonstiges"> 🤖 Sonstiges
+                    </label>
+                </div>
             </div>
+        </div>
+
+        <div class="vs-form-row">
             <div class="vs-field">
                 <label for="vs-zahlung">💳 Zahlungsart</label>
                 <select id="vs-zahlung">
@@ -144,20 +170,38 @@ add_action('wp_ajax_nopriv_vendorama_suche', 'vendorama_ajax_suche');
 function vendorama_ajax_suche() {
     check_ajax_referer('vendorama_search_nonce', 'nonce');
 
-    $kategorie    = sanitize_text_field($_POST['kategorie'] ?? '');
-    $zahlung      = sanitize_text_field($_POST['zahlung'] ?? '');
-    $nur_24h      = ($_POST['nur_24h'] ?? '') === 'true';
-    $verifiziert  = ($_POST['verifiziert'] ?? '') === 'true';
+    $kategorien    = isset($_POST['kategorien']) ? array_map('sanitize_text_field', (array)$_POST['kategorien']) : [];
+    $zahlung       = sanitize_text_field($_POST['zahlung'] ?? '');
+    $nur_24h       = ($_POST['nur_24h'] ?? '') === 'true';
+    $verifiziert   = ($_POST['verifiziert'] ?? '') === 'true';
     $min_bewertung = intval($_POST['min_bewertung'] ?? 0);
-    $lat_user     = floatval($_POST['lat'] ?? 0);
-    $lng_user     = floatval($_POST['lng'] ?? 0);
-    $umkreis      = intval($_POST['umkreis'] ?? 0);
+    $lat_user      = floatval($_POST['lat'] ?? 0);
+    $lng_user      = floatval($_POST['lng'] ?? 0);
+    $umkreis       = intval($_POST['umkreis'] ?? 0);
 
     $meta_query = ['relation' => 'AND'];
 
-    if (!empty($kategorie)) {
-        $meta_query[] = ['key' => 'kategorie', 'value' => $kategorie, 'compare' => '='];
+    // Mehrfachauswahl Kategorien
+    if (!empty($kategorien)) {
+        $kat_query = ['relation' => 'OR'];
+        foreach ($kategorien as $kat) {
+            $kat_query[] = [
+                'relation' => 'OR',
+                [
+                    'key'     => 'kategorie',
+                    'value'   => '"' . $kat . '"',
+                    'compare' => 'LIKE',
+                ],
+                [
+                    'key'     => 'kategorie',
+                    'value'   => $kat,
+                    'compare' => '=',
+                ],
+            ];
+        }
+        $meta_query[] = $kat_query;
     }
+
     if (!empty($zahlung)) {
         $meta_query[] = ['key' => 'zahlungsarten', 'value' => $zahlung, 'compare' => 'LIKE'];
     }
@@ -182,45 +226,45 @@ function vendorama_ajax_suche() {
         $lat = floatval(get_field('gps_lat', $automat->ID));
         $lng = floatval(get_field('gps_lng', $automat->ID));
 
-        // Umkreisfilter
         $distanz = null;
         if ($umkreis > 0 && $lat_user != 0 && $lng_user != 0) {
             $distanz = vendorama_distanz($lat_user, $lng_user, $lat, $lng);
             if ($distanz > $umkreis) continue;
         }
 
-        // Bewertung berechnen
         $sum    = floatval(get_post_meta($automat->ID, 'bewertung_summe', true));
         $anzahl = intval(get_post_meta($automat->ID, 'bewertung_anzahl', true));
         $durchschnitt = $anzahl > 0 ? round($sum / $anzahl, 1) : 0;
 
         if ($min_bewertung > 0 && $durchschnitt < $min_bewertung) continue;
 
-        // Foto holen
         $foto_url = '';
         $foto = get_field('foto', $automat->ID);
         if ($foto) {
             $foto_url = is_array($foto) ? ($foto['sizes']['medium'] ?? $foto['url']) : $foto;
         }
 
+        $beschreibung_lang = get_field('beschreibung_lang', $automat->ID);
+
         $ergebnisse[] = [
-            'id'           => $automat->ID,
-            'titel'        => $automat->post_title,
-            'kategorie'    => get_field('kategorie', $automat->ID),
-            'zahlung'      => get_field('zahlungsarten', $automat->ID),
-            'oeffnung'     => get_field('oeffnungszeiten', $automat->ID),
-            'beschreibung' => get_field('standort_beschreibung', $automat->ID),
-            'lat'          => $lat,
-            'lng'          => $lng,
-            'verifiziert'  => get_field('verifiziert', $automat->ID),
-            'distanz'      => $distanz ? round($distanz, 1) : null,
-            'bewertung'    => $durchschnitt,
-            'bewertung_anzahl' => $anzahl,
-            'foto'         => $foto_url,
+            'id'                    => $automat->ID,
+            'titel'                 => $automat->post_title,
+            'kategorie'             => get_field('kategorie', $automat->ID),
+            'zahlung'               => get_field('zahlungsarten', $automat->ID),
+            'oeffnung'              => get_field('oeffnungszeiten', $automat->ID),
+            'beschreibung'          => get_field('standort_beschreibung', $automat->ID),
+            'lat'                   => $lat,
+            'lng'                   => $lng,
+            'verifiziert'           => get_field('verifiziert', $automat->ID),
+            'distanz'               => $distanz ? round($distanz, 1) : null,
+            'bewertung'             => $durchschnitt,
+            'bewertung_anzahl'      => $anzahl,
+            'foto'                  => $foto_url,
+            'url'                   => get_permalink($automat->ID),
+            'hat_beschreibung_lang' => !empty($beschreibung_lang),
         ];
     }
 
-    // Nach Distanz sortieren
     if ($lat_user != 0) {
         usort($ergebnisse, function($a, $b) {
             return ($a['distanz'] ?? 999) <=> ($b['distanz'] ?? 999);
@@ -243,26 +287,20 @@ function vendorama_ajax_bewertung() {
     $sterne    = intval($_POST['sterne'] ?? 0);
     $kommentar = sanitize_textarea_field($_POST['kommentar'] ?? '');
 
-    if (!$post_id || $sterne < 1 || $sterne > 5) {
-        wp_send_json_error('Ungueltige Bewertung');
-    }
-    if (get_post_type($post_id) !== 'automat') {
-        wp_send_json_error('Ungueltiger Post');
-    }
+    if (!$post_id || $sterne < 1 || $sterne > 5) wp_send_json_error('Ungueltige Bewertung');
+    if (get_post_type($post_id) !== 'automat') wp_send_json_error('Ungueltiger Post');
 
-    // Bewertung speichern
     $sum    = floatval(get_post_meta($post_id, 'bewertung_summe', true));
     $anzahl = intval(get_post_meta($post_id, 'bewertung_anzahl', true));
 
     update_post_meta($post_id, 'bewertung_summe', $sum + $sterne);
     update_post_meta($post_id, 'bewertung_anzahl', $anzahl + 1);
 
-    // Kommentar als WordPress-Kommentar speichern
     if (!empty($kommentar)) {
         wp_insert_comment([
             'comment_post_ID'  => $post_id,
             'comment_content'  => $kommentar . ' [Bewertung: ' . $sterne . ' Sterne]',
-            'comment_approved' => 0, // Moderationspflichtig
+            'comment_approved' => 0,
             'comment_author'   => 'Vendorama-Nutzer',
         ]);
     }
@@ -300,9 +338,6 @@ function vendorama_ajax_geocode() {
     ]);
 }
 
-// -------------------------------------------------------
-// Haversine Formel
-// -------------------------------------------------------
 function vendorama_distanz($lat1, $lng1, $lat2, $lng2) {
     $r    = 6371;
     $dlat = deg2rad($lat2 - $lat1);

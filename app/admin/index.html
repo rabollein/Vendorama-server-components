@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendorama Admin App</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1A6B3C;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px 32px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .icon { font-size: 64px; margin-bottom: 16px; }
+        h1 { font-size: 24px; font-weight: 800; color: #1A6B3C; margin-bottom: 4px; }
+        .subtitle { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+        .badge {
+            display: inline-block;
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffc107;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+        .download-btn {
+            display: block;
+            background: #1A6B3C;
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            transition: background 0.2s;
+        }
+        .download-btn:hover { background: #145231; }
+        .info {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 24px;
+            text-align: left;
+        }
+        .info h3 { font-size: 13px; font-weight: 700; color: #1A6B3C; margin-bottom: 8px; }
+        .info p { font-size: 12px; color: #6b7280; line-height: 1.6; }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-top: 16px;
+            font-size: 12px;
+            color: #856404;
+            text-align: left;
+        }
+        .footer { margin-top: 24px; font-size: 11px; color: #9ca3af; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">🔐</div>
+        <h1>Vendorama Admin</h1>
+        <p class="subtitle">Interne Verwaltungs-App</p>
+        <div class="badge">⚠️ Nur für Administratoren</div>
+
+        <a href="vendorama-admin.apk" class="download-btn">
+            ⬇️ Admin App herunterladen
+        </a>
+
+        <div class="info">
+            <h3>📋 Funktionen</h3>
+            <p>
+                • Automaten freischalten & ablehnen<br>
+                • Automatendaten bearbeiten<br>
+                • Betreiber-Anfragen verwalten<br>
+                • GPS & Fotos aktualisieren
+            </p>
+        </div>
+
+        <div class="warning">
+            ⚠️ Diese App ist ausschließlich für Administratoren von Vendorama bestimmt. Nicht weitergeben!
+        </div>
+
+        <div class="footer">
+            Vendorama Admin • Nur für interne Nutzung
+        </div>
+    </div>
+</body>
+</html>
