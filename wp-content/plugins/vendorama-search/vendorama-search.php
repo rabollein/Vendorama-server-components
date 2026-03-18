@@ -92,9 +92,6 @@ function vendorama_search_shortcode() {
                     <label class="vs-chip" data-value="fahrrad">
                         <input type="checkbox" name="vs-kategorie" value="fahrrad"> 🚲 Fahrrad
                     </label>
-                    <label class="vs-chip" data-value="eis">
-                       <input type="checkbox" name="vs-kategorie" value="eis"> 🍦 Eis
-                    </label>
                     <label class="vs-chip" data-value="cbd">
                        <input type="checkbox" name="vs-kategorie" value="cbd"> 🌿 CBD
                     </label>
