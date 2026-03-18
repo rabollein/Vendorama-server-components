@@ -107,35 +107,24 @@ function vendorama_claim_submit() {
     }
 
     update_post_meta($claim_id, '_claim_automat_id', $automat_id);
-    update_post_meta($claim_id, '_claim_name',    $name);
-    update_post_meta($claim_id, '_claim_firma',   $firma);
-    update_post_meta($claim_id, '_claim_email',   $email);
-    update_post_meta($claim_id, '_claim_telefon', $telefon);
-    update_post_meta($claim_id, '_claim_nachricht', $nachricht);
-    update_post_meta($claim_id, '_claim_status',  'ausstehend');
+    update_post_meta($claim_id, '_claim_name',       $name);
+    update_post_meta($claim_id, '_claim_firma',      $firma);
+    update_post_meta($claim_id, '_claim_email',      $email);
+    update_post_meta($claim_id, '_claim_telefon',    $telefon);
+    update_post_meta($claim_id, '_claim_nachricht',  $nachricht);
+    update_post_meta($claim_id, '_claim_status',     'ausstehend');
 
     // E-Mail an Admin
-    $admin_url = admin_url('edit.php?post_type=vendorama_claim');
-    $genehmigen_url = wp_nonce_url(admin_url('admin-post.php?action=vendorama_claim_genehmigen&claim_id=' . $claim_id), 'claim_genehmigen_' . $claim_id);
-
-// WordPress auf Plain Text zwingen
-    add_filter('wp_mail_content_type', function() { return 'text/plain'; });
-
     wp_mail(
-        $email,
-        '✅ Ihre Anfrage bei Vendorama wurde erhalten',
-        "Hallo " . $name . ",\n\n" .
-        "vielen Dank für Ihre Anfrage! Wir haben Ihre Anfrage für den Automaten\n" .
-        '"' . $automat_titel . '" erhalten.' . "\n\n" .
-        "Wir prüfen Ihre Anfrage und melden uns in Kürze bei Ihnen.\n\n" .
-        "Mit freundlichen Grüßen\n" .
-        "Das Vendorama-Team\n" .
-        "https://www.vendorama.eu",
+        get_option('admin_email'),
+        '🔔 Neue Claim-Anfrage: ' . $automat_titel,
+        "Neue Claim-Anfrage von " . $name . " (" . $email . ")\n\n" .
+        "Automat: " . $automat_titel . "\n" .
+        "Firma: " . $firma . "\n" .
+        "Telefon: " . $telefon . "\n\n" .
+        "Verwalten: " . admin_url('edit.php?post_type=vendorama_claim'),
         ['Content-Type: text/plain; charset=UTF-8']
     );
-
-    // Filter wieder entfernen damit andere Mails nicht betroffen sind
-    remove_all_filters('wp_mail_content_type');
 
     // Bestätigungs-E-Mail an Betreiber
     wp_mail(
@@ -143,7 +132,7 @@ function vendorama_claim_submit() {
         '✅ Ihre Anfrage bei Vendorama wurde erhalten',
         "Hallo " . $name . ",\n\n" .
         "vielen Dank für Ihre Anfrage! Wir haben Ihre Anfrage für den Automaten\n" .
-        '"' . $automat_titel . '" erhalten.\n\n' .
+        '"' . $automat_titel . '" erhalten.' . "\n\n" .
         "Wir prüfen Ihre Anfrage und melden uns in Kürze bei Ihnen.\n\n" .
         "Mit freundlichen Grüßen\n" .
         "Das Vendorama-Team\n" .

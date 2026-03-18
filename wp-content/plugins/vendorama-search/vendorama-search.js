@@ -11,11 +11,18 @@ jQuery(document).ready(function($) {
         getraenke:     '🥤',
         frischprodukte:'🥚',
         backwaren:     '🥐',
+        eis:           '🍦',
         blumen:        '🌸',
         pakete:        '📦',
         geldautomat:   '💶',
         tankautomat:   '⛽',
         fahrrad:       '🚲',
+        eis:           '🍦',
+        cbd:           '🌿',
+        verhuetung:    '💊',
+        sex_toys:      '🔞',
+        kaffee_zubehoer: '☕',
+        kaffeebohnen:  '🫘',
         sonstiges:     '🤖'
     };
 
@@ -26,11 +33,14 @@ jQuery(document).ready(function($) {
         getraenke:     'Getränke',
         frischprodukte:'Frischprodukte',
         backwaren:     'Backwaren',
+        eis:           'Eis',
         blumen:        'Blumen',
         pakete:        'Pakete',
         geldautomat:   'Geldautomat',
         tankautomat:   'Tankautomat',
         fahrrad:       'Fahrrad',
+        kaffee_zubehoer: 'Kaffeeautomaten Zubehör',
+        kaffeebohnen:  'Kaffeebohnen',
         sonstiges:     'Sonstiges'
     };
 

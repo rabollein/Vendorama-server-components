@@ -10,12 +10,21 @@
         getraenke:      { icon: '🥤', farbe: '#2980b9', label: 'Getränke' },
         frischprodukte: { icon: '🥚', farbe: '#f39c12', label: 'Frischprodukte' },
         backwaren:      { icon: '🥐', farbe: '#d35400', label: 'Backwaren' },
+        eis:            { icon: '🍦', farbe: '#74b9ff', label: 'Eis' },
         blumen:         { icon: '🌸', farbe: '#8e44ad', label: 'Blumen' },
         pakete:         { icon: '📦', farbe: '#16a085', label: 'Pakete' },
         geldautomat:    { icon: '💶', farbe: '#27ae60', label: 'Geldautomat' },
         tankautomat:    { icon: '⛽', farbe: '#2c3e50', label: 'Tankautomat' },
         fahrrad:        { icon: '🚲', farbe: '#1A6B3C', label: 'Fahrrad' },
         sonstiges:      { icon: '🤖', farbe: '#7f8c8d', label: 'Sonstiges' }
+        eis:            { icon: '🍦', farbe: '#74b9ff', label: 'Eis' },
+        cbd:            { icon: '🌿', farbe: '#27ae60', label: 'CBD' },
+        verhuetung:     { icon: '💊', farbe: '#e84393', label: 'Verhütung' },
+        sex_toys:       { icon: '🔞', farbe: '#8e44ad', label: 'Sex-Toys' },
+        kaffee_zubehoer: { icon: '☕', farbe: '#6F4E37', label: 'Kaffeeautomaten Zubehör' },
+        kaffeebohnen:   { icon: '🫘', farbe: '#4a2c0a', label: 'Kaffeebohnen' },
+        sonstiges:      { icon: '🤖', farbe: '#7f8c8d', label: 'Sonstiges' }
+
     };
 
     function sterneSVG(wert) {

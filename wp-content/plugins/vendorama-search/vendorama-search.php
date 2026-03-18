@@ -74,6 +74,9 @@ function vendorama_search_shortcode() {
                     <label class="vs-chip" data-value="backwaren">
                         <input type="checkbox" name="vs-kategorie" value="backwaren"> 🥐 Backwaren
                     </label>
+                    <label class="vs-chip" data-value="eis">
+                    <input type="checkbox" name="vs-kategorie" value="eis"> 🍦 Eis
+                    </label>
                     <label class="vs-chip" data-value="blumen">
                         <input type="checkbox" name="vs-kategorie" value="blumen"> 🌸 Blumen
                     </label>
@@ -88,6 +91,23 @@ function vendorama_search_shortcode() {
                     </label>
                     <label class="vs-chip" data-value="fahrrad">
                         <input type="checkbox" name="vs-kategorie" value="fahrrad"> 🚲 Fahrrad
+                    </label>
+                    <label class="vs-chip" data-value="eis">
+                       <input type="checkbox" name="vs-kategorie" value="eis"> 🍦 Eis
+                    </label>
+                    <label class="vs-chip" data-value="cbd">
+                       <input type="checkbox" name="vs-kategorie" value="cbd"> 🌿 CBD
+                    </label>
+                    <label class="vs-chip" data-value="verhuetung">
+                       <input type="checkbox" name="vs-kategorie" value="verhuetung"> 💊 Verhütung
+                    </label>
+                    <label class="vs-chip" data-value="sex_toys">
+                       <input type="checkbox" name="vs-kategorie" value="sex_toys"> 🔞 Sex-Toys
+                    <label class="vs-chip" data-value="kaffee_zubehoer">
+                       <input type="checkbox" name="vs-kategorie" value="kaffee_zubehoer"> ☕ Kaffeeautomaten Zubehör
+                    </label>
+                    <label class="vs-chip" data-value="kaffeebohnen">
+                       <input type="checkbox" name="vs-kategorie" value="kaffeebohnen"> 🫘 Kaffeebohnen
                     </label>
                     <label class="vs-chip" data-value="sonstiges">
                         <input type="checkbox" name="vs-kategorie" value="sonstiges"> 🤖 Sonstiges
