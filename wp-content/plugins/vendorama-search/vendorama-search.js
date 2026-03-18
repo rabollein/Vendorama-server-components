@@ -201,7 +201,7 @@ jQuery(document).ready(function($) {
                 var badges      = formatiereBadges(a.kategorie);
                 var verifBadge  = a.verifiziert ? '<span class="vs-verifiziert">✅</span>' : '';
                 var distanz     = a.distanz ? '<div class="vs-karte-distanz">📍 ' + a.distanz + ' km entfernt</div>' : '';
-                var navLink     = 'https://www.openstreetmap.org/directions?to=' + a.lat + ',' + a.lng;
+                var navLink     = 'https://www.google.com/maps/dir/?api=1&destination=' + a.lat + ',' + a.lng;
                 var hauptkat    = Array.isArray(a.kategorie) ? a.kategorie[0] : (a.kategorie || 'sonstiges');
                 var icon        = kategorieIcons[hauptkat] || '🤖';
 

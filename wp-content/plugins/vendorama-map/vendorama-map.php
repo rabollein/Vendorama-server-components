@@ -16,8 +16,8 @@ defined('ABSPATH') or die('Kein direkter Zugriff!');
 add_action('wp_enqueue_scripts', 'vendorama_map_assets');
 
 function vendorama_map_assets() {
-    wp_enqueue_style('leaflet-css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', [], '1.9.4');
-    wp_enqueue_script('leaflet-js', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js', [], '1.9.4', true);
+    wp_enqueue_style('vendorama-map-css', plugin_dir_url(__FILE__) . 'vendorama-map.css', ['leaflet-css'], '1.0.1');
+    wp_enqueue_script('vendorama-map-js', plugin_dir_url(__FILE__) . 'vendorama-map.js', ['leaflet-js', 'jquery'], '1.0.1', true);
     wp_enqueue_style('vendorama-map-css', plugin_dir_url(__FILE__) . 'vendorama-map.css', ['leaflet-css'], '1.0.0');
     wp_enqueue_script('vendorama-map-js', plugin_dir_url(__FILE__) . 'vendorama-map.js', ['leaflet-js', 'jquery'], '1.0.0', true);
 
