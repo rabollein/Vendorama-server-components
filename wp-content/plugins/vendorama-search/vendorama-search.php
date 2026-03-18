@@ -100,6 +100,7 @@ function vendorama_search_shortcode() {
                     </label>
                     <label class="vs-chip" data-value="sex_toys">
                        <input type="checkbox" name="vs-kategorie" value="sex_toys"> 🔞 Sex-Toys
+                    </label>
                     <label class="vs-chip" data-value="kaffee_zubehoer">
                        <input type="checkbox" name="vs-kategorie" value="kaffee_zubehoer"> ☕ Kaffeeautomaten Zubehör
                     </label>
