@@ -44,7 +44,8 @@ var kategorieConfig = {
     }
 
     function erstellePopupHTML(a, distanz) {
-        var cfg = kategorieConfig[a.kategorie] || { icon: '🤖', label: a.kategorie };
+        var hauptKat = a.kategorie ? a.kategorie.split(',')[0].trim() : 'sonstiges';
+        var cfg = kategorieConfig[hauptKat] || { icon: '🤖', label: hauptKat };
         var fotoHTML = a.foto
             ? '<img class="vm-popup-foto" src="' + a.foto + '" alt="' + a.titel + '" />'
             : '<div class="vm-popup-placeholder">' + cfg.icon + '</div>';
@@ -154,7 +155,8 @@ var kategorieConfig = {
 
         var html = '';
         Object.keys(kategorienVorhanden).forEach(function(kat) {
-            var cfg = kategorieConfig[kat] || { icon: '🤖', farbe: '#999', label: kat };
+        var erstesKat = kat ? kat.split(',')[0].trim() : 'sonstiges';
+        var cfg = kategorieConfig[erstesKat] || { icon: '🤖', farbe: '#999', label: erstesKat };
             html += '<div class="vm-legende-item" data-kategorie="' + kat + '">'
                   + '<div class="vm-legende-dot" style="background:' + cfg.farbe + '"></div>'
                   + cfg.icon + ' ' + cfg.label
