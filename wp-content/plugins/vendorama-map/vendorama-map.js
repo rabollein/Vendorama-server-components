@@ -57,7 +57,7 @@ var kategorieConfig = {
 
         var verifiziert = a.verifiziert ? ' ✅' : '';
         var distanzHTML = distanz ? '<div class="vm-popup-distanz">📍 ' + distanz + ' km entfernt</div>' : '';
-        var navLink = 'https://www.openstreetmap.org/directions?to=' + a.lat + ',' + a.lng;
+        var navLink = 'https://www.google.com/maps/dir/?api=1&destination=' + a.lat + ',' + a.lng; 
 
         return '<div class="vm-hover-popup-content">'
             + fotoHTML
@@ -118,7 +118,7 @@ var kategorieConfig = {
 
             // Klick öffnet Navigation
             marker.on('click', function() {
-                var navLink = 'https://www.openstreetmap.org/directions?to=' + a.lat + ',' + a.lng;
+                var navLink = 'https://www.google.com/maps/dir/?api=1&destination=' + a.lat + ',' + a.lng;
                 window.open(navLink, '_blank');
             });
 
