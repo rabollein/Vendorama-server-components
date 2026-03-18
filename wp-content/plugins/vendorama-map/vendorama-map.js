@@ -44,7 +44,8 @@ var kategorieConfig = {
     }
 
     function erstellePopupHTML(a, distanz) {
-        var hauptKat = a.kategorie ? a.kategorie.split(',')[0].trim() : 'sonstiges';
+        var hauptKat = Array.isArray(a.kategorie) ? a.kategorie[0] : (a.kategorie ? a.kategorie.split(',')[0].trim() : 'sonstiges');
+        var cfg = kategorieConfig[hauptKat] || { icon: '🤖', label: hauptKat };
         var cfg = kategorieConfig[hauptKat] || { icon: '🤖', label: hauptKat };
         var fotoHTML = a.foto
             ? '<img class="vm-popup-foto" src="' + a.foto + '" alt="' + a.titel + '" />'
